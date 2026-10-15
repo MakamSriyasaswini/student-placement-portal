@@ -1,12 +1,6 @@
 
-FROM nginx:alpine
-
-LABEL maintainer="University Placement Cell"
-LABEL application="student-placement-portal"
+FROM nginx:latest
 
 COPY index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
-
-HEALTHCHECK --interval=10s --timeout=3s --retries=3 \
-  CMD wget -q -O /dev/null http://127.0.0.1/ || exit 1
