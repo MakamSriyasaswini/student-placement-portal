@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: student-placement-portal
-          image: YOUR_DOCKERHUB_USERNAME/student-placement-portal:v1
+          image: makamsriya/student-placement-portal:v1
           ports:
             - containerPort: 80
 
