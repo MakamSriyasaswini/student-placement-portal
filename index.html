@@ -1,181 +1,206 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>University Placement Portal</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #243047;
-    }
-    header {
-      background: #142b4a;
-      color: white;
-      padding: 24px 7%;
-    }
-    header h1 { margin: 0 0 8px; }
-    nav { margin-top: 18px; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 22px;
-      font-weight: bold;
-    }
-    main { padding: 28px 7%; }
-    .hero {
-      background: #dceaff;
-      padding: 28px;
-      border-radius: 14px;
-      margin-bottom: 24px;
-    }
-    .stats, .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 18px;
-      margin: 20px 0 32px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px #142b4a12;
-    }
-    .stat { border-left: 5px solid #3478db; }
-    .stat h3 { color: #3478db; font-size: 30px; margin: 5px 0; }
-    h2 { color: #142b4a; }
-    .tag {
-      display: inline-block;
-      background: #e2f5e9;
-      color: #17663a;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 13px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #142b4a;
-      color: white;
-    }
-    @media (max-width: 600px) {
-      nav a { display: inline-block; margin: 8px; }
-      main { padding: 20px 5%; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            margin: 0;
+        }
+
+        header {
+            background: #1f3c88;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1f3c88;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #1f3c88;
+        }
+
+        .card h3 {
+            color: #1f3c88;
+        }
+
+        .tag {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1f3c88;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>University Placement Portal</h1>
-    <p>Your gateway to career opportunities</p>
-    <nav>
-      <a href="#statistics">Statistics</a>
-      <a href="#students">Students</a>
-      <a href="#companies">Companies</a>
-      <a href="#drives">Recruitment Drives</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>Build Your Future With Us</h2>
-      <p>Explore campus placements, discover employers, check eligibility,
-         and prepare for your next career opportunity.</p>
-    </section>
+<header>
+    <h1>Student Placement Portal</h1>
+    <p>Explore Opportunities and Build Your Career</p>
+</header>
 
-    <section id="statistics">
-      <h2>Placement Statistics</h2>
-      <div class="stats">
-        <div class="card stat">
-          <h3>850+</h3><p>Students Placed</p>
+<div class="container">
+
+    <div class="section">
+        <h2>About Placement Cell</h2>
+        <p>
+            The University Placement Cell helps students discover
+            recruitment opportunities, connect with companies,
+            and prepare for their professional careers.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Placement Statistics</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>850+</h3>
+                <p>Students Placed</p>
+            </div>
+
+            <div class="card">
+                <h3>120+</h3>
+                <p>Recruiting Companies</p>
+            </div>
+
+            <div class="card">
+                <h3>12 LPA</h3>
+                <p>Highest Package</p>
+            </div>
+
+            <div class="card">
+                <h3>6.5 LPA</h3>
+                <p>Average Package</p>
+            </div>
         </div>
-        <div class="card stat">
-          <h3>120+</h3><p>Recruiting Companies</p>
+    </div>
+
+    <div class="section">
+        <h2>Student Profiles</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Student A</h3>
+                <p>Department: Software Engineering</p>
+                <p>Skills: Python, Java, HTML</p>
+                <p class="tag">Placement Ready</p>
+            </div>
+
+            <div class="card">
+                <h3>Student B</h3>
+                <p>Department: Computer Science</p>
+                <p>Skills: C++, SQL, Docker</p>
+                <p class="tag">Placement Ready</p>
+            </div>
+
+            <div class="card">
+                <h3>Student C</h3>
+                <p>Department: Information Technology</p>
+                <p>Skills: JavaScript, Cloud Computing</p>
+                <p class="tag">Placement Ready</p>
+            </div>
         </div>
-        <div class="card stat">
-          <h3>12 LPA</h3><p>Highest Package</p>
+    </div>
+
+    <div class="section">
+        <h2>Company Profiles</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>TechNova Solutions</h3>
+                <p>Role: Software Developer</p>
+                <p>Eligibility: 7.0 CGPA and above</p>
+            </div>
+
+            <div class="card">
+                <h3>CloudBridge Technologies</h3>
+                <p>Role: DevOps Engineer</p>
+                <p>Eligibility: 6.5 CGPA and above</p>
+            </div>
+
+            <div class="card">
+                <h3>DataSphere Analytics</h3>
+                <p>Role: Data Analyst</p>
+                <p>Eligibility: SQL and programming skills</p>
+            </div>
         </div>
-        <div class="card stat">
-          <h3>6.5 LPA</h3><p>Average Package</p>
+    </div>
+
+    <div class="section">
+        <h2>Upcoming Recruitment Drives</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>TechNova Solutions</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Process: Aptitude and Technical Interview</p>
+                <p class="tag">Registration Open</p>
+            </div>
+
+            <div class="card">
+                <h3>CloudBridge Technologies</h3>
+                <p>Date: 30 November 2026</p>
+                <p>Process: Online Assessment</p>
+                <p class="tag">Upcoming</p>
+            </div>
+
+            <div class="card">
+                <h3>DataSphere Analytics</h3>
+                <p>Date: 5 December 2026</p>
+                <p>Process: SQL Test and Interview</p>
+                <p class="tag">Upcoming</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <section id="students">
-      <h2>Featured Student Profiles</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Student A</h3>
-          <p>Department: Computer Science</p>
-          <p>Skills: Python, Java, SQL</p>
-          <span class="tag">Placement Ready</span>
-        </article>
-        <article class="card">
-          <h3>Student B</h3>
-          <p>Department: Information Technology</p>
-          <p>Skills: HTML, CSS, JavaScript</p>
-          <span class="tag">Placement Ready</span>
-        </article>
-        <article class="card">
-          <h3>Student C</h3>
-          <p>Department: Electronics</p>
-          <p>Skills: C++, Embedded Systems</p>
-          <span class="tag">Placement Ready</span>
-        </article>
-      </div>
-    </section>
+</div>
 
-    <section id="companies">
-      <h2>Company Profiles</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>TechNova Solutions</h3>
-          <p>Roles: Software Engineer, QA Engineer</p>
-          <p>Eligibility: B.E./B.Tech, 7.0 CGPA, no active backlogs.</p>
-        </article>
-        <article class="card">
-          <h3>CloudBridge Technologies</h3>
-          <p>Roles: Cloud Associate, DevOps Trainee</p>
-          <p>Eligibility: B.E./B.Tech, 6.5 CGPA, basic cloud knowledge.</p>
-        </article>
-        <article class="card">
-          <h3>DataSphere Analytics</h3>
-          <p>Roles: Data Analyst, Junior Developer</p>
-          <p>Eligibility: Relevant degree, SQL and programming skills.</p>
-        </article>
-      </div>
-    </section>
+<footer>
+    <p>&copy; 2026 University Placement Cell</p>
+</footer>
 
-    <section id="drives">
-      <h2>Upcoming Recruitment Drives</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>TechNova Solutions</h3>
-          <p>Date: 25 November 2026</p>
-          <p>Process: Aptitude test, technical interview, HR interview.</p>
-          <span class="tag">Registration Open</span>
-        </article>
-        <article class="card">
-          <h3>CloudBridge Technologies</h3>
-          <p>Date: 30 November 2026</p>
-          <p>Process: Online assessment and technical interview.</p>
-          <span class="tag">Upcoming</span>
-        </article>
-        <article class="card">
-          <h3>DataSphere Analytics</h3>
-          <p>Date: 5 December 2026</p>
-          <p>Process: SQL assessment and interview.</p>
-          <span class="tag">Upcoming</span>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 University Placement Cell | Student Placement Portal</p>
-  </footer>
 </body>
 </html>
